@@ -16,17 +16,20 @@ enum
 
 struct msg_path_st
 {
+    long mytype;
     char path[PATHMAX]; /*ASCIIZ带尾0的串*/
 };
 
 struct msg_data_st
 {
+    long mytype;
     char data[DATAMAX];
     int datalen;
 };
 
 struct msg_eot_st
 {
+    long mytype;
     
 };
 
